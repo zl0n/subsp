@@ -2,7 +2,7 @@
 sudo apt-get update && sudo apt-get upgrade -y
 
 # скачиваем необходимые зависимости
-sudo apt-get install wget jq tmux ncdu htop git-core -y
+sudo apt-get install wget mc jq tmux ncdu htop git-core -y
 
 # скачиваем исполняемые файлы одной командой
 mkdir $HOME/subspace; \
@@ -26,6 +26,8 @@ EOF
 # рестартим журнал
 sudo systemctl restart systemd-journald
 
+
+exit
 cd ~
 git clone git@github.com:zl0n/subsp.git
 cd ~/subsp
